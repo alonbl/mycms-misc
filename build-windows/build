@@ -178,6 +178,7 @@ build_mycms() {
 		--enable-cms-verify \
 		--enable-io-driver-file \
 		--enable-openssl-err-strings \
+		--enable-pinentry \
 		--enable-tool \
 		|| die "Configure mycms"
 	${MAKE} ${MAKEOPTS} ${MAKE_AUTOCONF_INSTALL_TARGET} || die "make mycms"
